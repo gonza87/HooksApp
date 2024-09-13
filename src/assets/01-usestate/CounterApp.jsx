@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./CounterApp.css";
 
 const CounterApp = () => {
   const [state, setCounter] = useState({
@@ -10,7 +11,7 @@ const CounterApp = () => {
   const { counter1, counter2, counter3 } = state;
 
   return (
-    <div className="container">
+    <div className="container cajaCounter">
       <h1>counter1: {counter1}</h1>
       <h1>counter2: {counter2}</h1>
       <h1>counter3: {counter3}</h1>
