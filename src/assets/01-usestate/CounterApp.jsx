@@ -10,7 +10,7 @@ const CounterApp = () => {
   const { counter1, counter2, counter3 } = state;
 
   return (
-    <>
+    <div className="container">
       <h1>counter1: {counter1}</h1>
       <h1>counter2: {counter2}</h1>
       <h1>counter3: {counter3}</h1>
@@ -26,7 +26,7 @@ const CounterApp = () => {
       >
         +1
       </button>
-    </>
+    </div>
   );
 };
 
