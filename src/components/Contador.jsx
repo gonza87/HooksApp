@@ -3,12 +3,16 @@ import "./Contador.css";
 
 const Contador = () => {
     const [count, setCount] = useState(0);
+    
     const handleAdd = () => {
         setCount(prevState => prevState +1)
     }
 
     const handleRestar = () => {
-        setCount(prevState => prevState -1)
+        if(count >= 1 ){
+            setCount(prevState => prevState -1) 
+        }
+       
     }
 
     const handleReset = () => {
