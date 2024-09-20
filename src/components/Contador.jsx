@@ -1,6 +1,14 @@
+import { useState } from "react";
+
 const Contador = () => {
     return(
-        <h2>test</h2>
+        <div>
+            <h2>Contador</h2>
+            <p>number</p>
+            <button>Sumar</button>
+            <button>Restar</button>
+        </div>
+        
     )
 }
 
