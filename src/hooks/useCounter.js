@@ -10,9 +10,14 @@ export const useCounter = (initialValue = 10) => {
         if(counter >= 1) {setCounter(prev => prev -1)}
     }
 
+    const reset = () => {
+        setCounter(10)
+    }
+
     return{
         counter,
         increment,
-        decrement
+        decrement,
+        reset
     }
 }
