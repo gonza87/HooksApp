@@ -2,7 +2,13 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 
 export const MultipleCustomHook = () => {
-  useFetch();
+  const { data, hasError, isLoading } = useFetch();
 
-  return <div>MultipleCustomHook</div>;
+  return (
+    <>
+      <h1>Informacion de pokemon</h1>
+      <hr />
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </>
+  );
 };
