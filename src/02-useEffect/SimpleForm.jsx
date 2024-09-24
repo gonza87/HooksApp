@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Message from "./Message";
 
 function SimpleForm() {
   const [formstate, setFormState] = useState({
@@ -37,6 +38,8 @@ function SimpleForm() {
         value={email}
         onChange={onInputchange}
       />
+
+      {username === "strider2" && <Message />}
     </div>
   );
 }
