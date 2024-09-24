@@ -1,21 +1,11 @@
-import { useState } from "react";
+import { useForm } from "../hooks/useForm";
 
 function FormWithCustomHook() {
-  const [formstate, setFormState] = useState({
+  const { formstate, onInputchange, username, email, password } = useForm({
     username: "",
     email: "",
     password: "",
   });
-
-  const { username, email, password } = formstate;
-
-  const onInputchange = ({ target }) => {
-    const { name, value } = target;
-    setFormState({
-      ...formstate,
-      [name]: value,
-    });
-  };
 
   return (
     <div className="container">
