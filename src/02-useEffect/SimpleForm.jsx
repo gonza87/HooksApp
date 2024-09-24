@@ -1,8 +1,13 @@
-import React from "react";
+import { useState } from "react";
 
 function SimpleForm() {
+  const [formstate, setFormState] = useState({
+    username: "strider",
+    email: "fernando@google.com",
+  });
+
   return (
-    <>
+    <div className="container">
       <h1>Formulario simple</h1>
       <hr />
       <input
@@ -11,8 +16,14 @@ function SimpleForm() {
         placeholder="Username"
         name="username"
       />
-      <button className="btn btn-primary">a</button>
-    </>
+
+      <input
+        type="email"
+        className="form-control mt-2"
+        placeholder="fernando@google.com"
+        name="email"
+      />
+    </div>
   );
 }
 
