@@ -32,7 +32,12 @@ export const useFetch = () => {
 
     const data = await resp.json();
     
-    console.log({data})
+    setState({
+        data: data,
+        isLoading: false,
+        hasError: false,
+        error: null,
+    })
   
 }
 
