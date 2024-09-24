@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react'
 
-export const useFetch = () => {
+export const useFetch = ( url) => {
   const [state, setState] = useState({
     data: null,
     isLoading: true,
@@ -15,7 +15,7 @@ export const useFetch = () => {
   }, [])
   
   const getFetch = async () => {
-    const resp = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+    const resp = await fetch(url);
     
     if(!resp.ok){
         setState({
