@@ -16,9 +16,25 @@ export const useFetch = () => {
   
   const getFetch = async () => {
     const resp = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+    
+    if(!resp.ok){
+        setState({
+            data: null,
+            isLoading: false,
+            hasError: true,
+            error: {
+                code: resp.status,
+                message: resp.statusText,
+            }
+        });
+        return
+    }
+
     const data = await resp.json();
+    
     console.log({data})
-  }
+  
+}
 
   return{
    data: state.data,
