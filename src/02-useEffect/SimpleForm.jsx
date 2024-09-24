@@ -6,6 +6,8 @@ function SimpleForm() {
     email: "fernando@google.com",
   });
 
+  const { username, email } = formstate;
+
   return (
     <div className="container">
       <h1>Formulario simple</h1>
