@@ -17,7 +17,16 @@ export const MultipleCustomHook = () => {
       {isLoading ? (
         <LoadingMessage />
       ) : (
-        <Pokemoncard id={data.id} name={data.name} />
+        <Pokemoncard
+          id={data.id}
+          name={data.name}
+          sprites={[
+            data.sprites.front_default,
+            data.sprites.front_shiny,
+            data.sprites.back_default,
+            data.sprites.back_shiny,
+          ]}
+        />
       )}
 
       <button onClick={() => decrement()} className="btn btn-primary mt-2 me-2">

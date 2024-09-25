@@ -6,6 +6,12 @@ export default function Pokemoncard({ id, name, sprites = [] }) {
       <h2 className="textcapitalize">
         #{id} - {name}
       </h2>
+
+      <div>
+        {sprites.map((sprite) => (
+          <img key={sprite} src={sprite} alt={name} />
+        ))}
+      </div>
     </section>
   );
 }
