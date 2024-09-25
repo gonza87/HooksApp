@@ -15,8 +15,12 @@ export const MultipleCustomHook = () => {
       {isLoading && <h2>cargando</h2>}
       <h2>{data?.name}</h2>
 
-      <button className="btn btn-primary mt-2 me-2">Anteriores</button>
-      <button className="btn btn-primary mt-2">Siguiente</button>
+      <button onClick={decrement} className="btn btn-primary mt-2 me-2">
+        Anteriores
+      </button>
+      <button onClick={decrement} className="btn btn-primary mt-2">
+        Siguiente
+      </button>
     </>
   );
 };
