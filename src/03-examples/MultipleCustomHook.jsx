@@ -19,7 +19,6 @@ export const MultipleCustomHook = () => {
       ) : (
         <Pokemoncard id={data.id} name={data.name} />
       )}
-      <h2>{data?.name}</h2>
 
       <button onClick={() => decrement()} className="btn btn-primary mt-2 me-2">
         Anteriores
