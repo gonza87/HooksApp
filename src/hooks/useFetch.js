@@ -12,7 +12,7 @@ export const useFetch = ( url) => {
     
   getFetch();
    
-  }, [])
+  }, [url])
   
   const getFetch = async () => {
     const resp = await fetch(url);
