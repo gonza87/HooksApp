@@ -1,6 +1,7 @@
 import React from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useCounter } from "../hooks/useCounter";
+import LoadingMessage from "./LoadingMessage";
 
 export const MultipleCustomHook = () => {
   const { counter, increment, decrement } = useCounter(1);
@@ -12,7 +13,7 @@ export const MultipleCustomHook = () => {
     <>
       <h1>Informacion de pokemon</h1>
       <hr />
-      {isLoading && <h2>cargando</h2>}
+      {isLoading && <LoadingMessage />}
       <h2>{data?.name}</h2>
 
       <button onClick={() => decrement()} className="btn btn-primary mt-2 me-2">
