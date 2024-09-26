@@ -1,8 +1,8 @@
 import React from "react";
 import { useFetch } from "../hooks/useFetch";
 import { useCounter } from "../hooks/useCounter";
-import LoadingMessage from "./LoadingMessage";
-import Pokemoncard from "./Pokemoncard";
+import LoadingMessage from "../03-examples/LoadingMessage";
+import Pokemoncard from "../03-examples/Pokemoncard";
 
 export const Layout = () => {
   const { counter, increment, decrement } = useCounter(1);
