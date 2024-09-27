@@ -17,7 +17,9 @@ export const Memorize = () => {
         +1
       </button>
 
-      <button>Sow/Hide {JSON.stringify(show)}</button>
+      <button className="btn btn-primary" onClick={() => setShow(!show)}>
+        Sow/Hide {JSON.stringify(show)}
+      </button>
     </>
   );
 };
