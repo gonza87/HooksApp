@@ -15,11 +15,14 @@ import { createRoot } from "react-dom/client";
 // import { Layout } from "./05-useLayoutEffect/Layout";
 // import { Memorize } from "./06-memos/Memorize";
 
-import { MemoHook } from "./06-memos/MemoHook";
+// import { MemoHook } from "./06-memos/MemoHook";
+
+import CallbackHook from "./06-memos/CallbackHook";
 import "bootstrap/dist/css/bootstrap.min.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MemoHook />
+    <CallbackHook />
+    {/* <MemoHook /> */}
     {/* <Memorize /> */}
     {/* <Layout /> */}
     {/* <FocusScreen /> */}
