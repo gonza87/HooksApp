@@ -4,13 +4,16 @@ const initialState = [{
     done: false,
 }];
 
-const todoReducer = (state = initialState, action) =>{
+const todoReducer = (state = initialState, action = {}) =>{
+    if (action.type === '[Todo] add todo'){
+        return[...state, action.payload]
+    }
 
     return state;
 
 }
 
-const todos = todoReducer();
+let todos = todoReducer();
 
 const newTodo = {
     id: 2,
@@ -18,10 +21,10 @@ const newTodo = {
     done: false,
 }
 
-const addTodoAction = {
-    type: "[Todo] add todo",
-    payload: newTodo,
-}
+ const addTodoAction = {
+     type: '[Todo] add todo',
+     payload: newTodo,
+ }
 
-todos = todoReducer(todos, addTodoAction);
-console.log({state: todos})
+ todos = todoReducer(todos, addTodoAction);
+ console.log({state: todos})
