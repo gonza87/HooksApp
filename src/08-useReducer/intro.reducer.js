@@ -11,4 +11,17 @@ const todoReducer = (state = initialState, action) =>{
 }
 
 const todos = todoReducer();
-console.log(todos)
+
+const newTodo = {
+    id: 2,
+    todo: "Recolectar la piedra del Poder",
+    done: false,
+}
+
+const addTodoAction = {
+    type: "[Todo] add todo",
+    payload: newTodo,
+}
+
+todos = todoReducer(todos, addTodoAction);
+console.log({state: todos})
