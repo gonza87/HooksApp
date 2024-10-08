@@ -9,3 +9,6 @@ const todoReducer = (state = initialState, action) =>{
     return state;
 
 }
+
+const todos = todoReducer();
+console.log(todos)
