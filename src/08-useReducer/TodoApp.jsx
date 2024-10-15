@@ -1,6 +1,9 @@
 import React from "react";
+import { useReducer } from "react";
 
 function TodoApp() {
+  const [state, dispatch] = useReducer(first, second, third);
+
   return (
     <>
       <h1>Todo App</h1>
