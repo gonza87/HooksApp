@@ -6,6 +6,11 @@ const initialState = [
         id: new Date().getTime(),
         description: "recolectar la piedra del alma",
         done: false,
+    },
+    {
+        id: new Date().getTime() * 3,
+        description: "recolectar la piedra del alma",
+        done: false,
     }
 ]
 
