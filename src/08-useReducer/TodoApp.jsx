@@ -25,10 +25,10 @@ function TodoApp() {
 
       <div className="row">
         <div className="col-7">
-          <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item3</li>
+          <ul className="list-group">
+            <li className="list-group-item">item 1</li>
+            <li className="list-group-item">item 2</li>
+            <li className="list-group-item">item3</li>
           </ul>
         </div>
         <div className="col-5">
