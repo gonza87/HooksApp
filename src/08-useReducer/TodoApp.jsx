@@ -22,11 +22,20 @@ function TodoApp() {
     <>
       <h1>Todo App</h1>
       <hr />
-      <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item3</li>
-      </ul>
+
+      <div className="row">
+        <div className="col-7">
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item3</li>
+          </ul>
+        </div>
+        <div className="col-5">
+          <h4>Agregar Todo</h4>
+          <hr />
+        </div>
+      </div>
     </>
   );
 }
