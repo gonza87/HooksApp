@@ -34,6 +34,13 @@ function TodoApp() {
         <div className="col-5">
           <h4>Agregar Todo</h4>
           <hr />
+          <form>
+            <input
+              type="text"
+              placeholder="¿Que hay que hacer?"
+              className="form-control"
+            />
+          </form>
         </div>
       </div>
     </>
