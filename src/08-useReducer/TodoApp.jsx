@@ -17,7 +17,7 @@ const initialState = [
 ];
 
 function TodoApp() {
-  const [state, dispatch] = useReducer(todoReducer, initialState);
+  const [todos, dispatch] = useReducer(todoReducer, initialState);
 
   return (
     <>
@@ -28,7 +28,7 @@ function TodoApp() {
 
       <div className="row">
         <div className="col-7">
-          <TodoList />
+          <TodoList todos={todos} />
         </div>
         <div className="col-5">
           <h4>Agregar Todo</h4>
