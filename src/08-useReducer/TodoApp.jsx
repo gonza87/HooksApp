@@ -2,6 +2,7 @@ import React from "react";
 import { useReducer } from "react";
 import { todoReducer } from "./todoReducer";
 import TodoList from "./TodoList";
+import TodoAdd from "./TodoAdd";
 
 const initialState = [
   {
@@ -34,7 +35,7 @@ function TodoApp() {
           <h4>Agregar Todo</h4>
           <hr />
 
-          <TodoApp />
+          <TodoAdd />
         </div>
       </div>
     </>
