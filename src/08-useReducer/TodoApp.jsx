@@ -33,6 +33,8 @@ function TodoApp() {
         <div className="col-5">
           <h4>Agregar Todo</h4>
           <hr />
+
+          <TodoApp />
         </div>
       </div>
     </>
