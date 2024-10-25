@@ -8,8 +8,15 @@ export const MainApp = () => {
   return (
     <>
       <h1>MainApp</h1>
-      <Link to="/">Inicio</Link>
-      <Link to="/login">Login</Link>
+      <Link to="/" className="me-2">
+        Inicio
+      </Link>
+      <Link to="/login" className="me-2">
+        Login
+      </Link>
+      <Link to="/about" className="me-2">
+        About
+      </Link>
       <hr />
       <Routes>
         <Route path="/" element={<HomePage />} />
