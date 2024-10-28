@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -12,16 +12,30 @@ function NavBar() {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to="/Login"
+              >
+                Login
+              </NavLink>
             </ul>
           </div>
         </div>
