@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            UseContext
           </a>
           <button
             className="navbar-toggler"
@@ -35,11 +35,6 @@ function NavBar() {
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
                 </a>
               </li>
             </ul>
