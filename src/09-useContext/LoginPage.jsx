@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Usercontext } from "./context/UserContext";
 
 export const LoginPage = () => {
-  const algo = useContext(Usercontext);
+  const { hola } = useContext(Usercontext);
+  console.log(hola);
 
   return (
     <>
