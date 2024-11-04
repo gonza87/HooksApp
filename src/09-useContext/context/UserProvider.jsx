@@ -1,5 +1,7 @@
 import React from "react";
+import { Usercontext } from "./UserContext";
 
-export const UserProvider = () => {
-  return <div>UserProvider</div>;
+export const UserProvider = ({ children }) => {
+  return;
+  <Usercontext>{children}</Usercontext>;
 };
